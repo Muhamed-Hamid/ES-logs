@@ -2,7 +2,7 @@ import requests
 import json
 
 def search(num):
-	url = 'https://search-messaging-sms-fztyefd6vsbagzrrkie66ni4ue.us-east-1.es.amazonaws.com/_search?q=to:' + str(num)
+	url = 'https://search##/_search?q=to:' + str(num)
 	encode = url.replace(' ','%20')
 	r = requests.get(url)
 	j = r.json()
