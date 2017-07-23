@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<h1>Search result for <small>{{session.number}}</small></h1>
+		{{ session.res }}
+		<ul class="list-group">
+				<li class="list-group-item">Date: {{ date }}</li>
+				<li class="list-group-item">From: {{ session.From }}</li>
+				<li class="list-group-item">To: {{ session.To }}</li>
+				<li class="list-group-item">MessageID: {{ session.Oid }}</li>
+				<li class="list-group-item">SMSC: {{ session.SMSC }}</li>
+				<li class="list-group-item">UDH: {{ session.udh }}</li>
+		</ul>
+{% endblock %}
